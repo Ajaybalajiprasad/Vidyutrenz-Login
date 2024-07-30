@@ -1,0 +1,123 @@
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.landing-page h1 {
+font-size: 2.5rem;
+color: #333;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.landing-page button {
+padding: 10px 20px;
+font-size: 1rem;
+color: #fff;
+background-color: rgb(32, 31, 31);
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.landing-page button:hover {
+background-color: rgb(94, 94, 94);
+}
+
+.button-group {
+display: flex;
+margin-top: 10px;
+gap: 10px; 
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.button-group button {
+padding: 10px 20px;
+font-size: 16px;
+}
+
+.underline {
+border: none;
+border-bottom: 2px solid #7c7c7c;
+font-size: medium;
+outline: none;
+background: none;
+width: 100%;
+max-width: 300px;
+text-align: center;
+}
+
+.input {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+width: 100%;
+}
+
+.star-message {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #fff;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+text-align: center;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+width: 90%;
+max-width: 400px;
+}
+
+.arrow-up {
+width: 0;
+height: 0;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-bottom: 10px solid #fff;
+margin: 0 auto;
+position: relative;
+top: -10px;
+}
+
+@media (max-width: 768px) {
+.landing-page h1 {
+  font-size: 2rem;
+}
+
+.landing-page button {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+
+.button-group button {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+}
+
+@media (max-width: 480px) {
+.landing-page h1 {
+  font-size: 1.5rem;
+}
+
+.landing-page button {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+
+.button-group button {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+}
